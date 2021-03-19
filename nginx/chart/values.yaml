@@ -329,7 +329,7 @@ serviceAccount:
 service:
   ## Service type
   ##
-  type: LoadBalancer
+  type: ClusterIP
 
   ## HTTP Port
   ##
