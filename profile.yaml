@@ -7,4 +7,5 @@ spec:
   version: v0.0.1
   artifacts:
     - name: nginx-server
-      path: nginx/chart
+      path: nginx/deployment
+      kind: Kustomize
