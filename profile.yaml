@@ -8,4 +8,4 @@ spec:
   artifacts:
     - name: nginx-server
       path: nginx/chart
-      kind: HelmChart
+      kind: HelmChartLocal
