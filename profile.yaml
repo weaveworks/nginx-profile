@@ -9,3 +9,6 @@ spec:
     - name: nginx-server
       path: nginx/chart
       kind: HelmChart
+    - name: nginx-deployment
+      path: nginx/deployment
+      kind: Kustomize
