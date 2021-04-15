@@ -15,6 +15,6 @@ spec:
     - name: dokuwiki
       kind: HelmChart
       chart:
-        helm_url: https://charts.bitnami.com/bitnami
-        helm_chart: dokuwiki
-        helm_chart_version: "11.1.6"
+        url: https://charts.bitnami.com/bitnami
+        name: dokuwiki
+        version: "11.1.6"
