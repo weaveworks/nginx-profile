@@ -6,9 +6,11 @@ spec:
   description: Profile for deploying nginx
   version: v0.0.1
   artifacts:
-    - name: nginx-server
-      path: nginx/chart
-      kind: HelmChart
+    - name: nested-profile
+      kind: Profile
+      profile:
+        url: https://github.com/weaveworks/nginx-profile
+        branch: helm-artifact
     - name: nginx-deployment
       path: nginx/deployment
       kind: Kustomize
