@@ -6,14 +6,9 @@ spec:
   description: Profile for deploying nginx
   version: v0.0.1
   artifacts:
-    - name: nginx-server
-      path: nginx/chart
+    - name: invalid-artifact
       kind: HelmChart
-    - name: nginx-deployment
       path: nginx/deployment
-      kind: Kustomize
-    - name: dokuwiki
-      kind: HelmChart
       chart:
         url: https://charts.bitnami.com/bitnami
         name: dokuwiki
