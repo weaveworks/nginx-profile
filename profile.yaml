@@ -15,6 +15,6 @@ spec:
     - name: dokuwiki
       kind: HelmChart
       chart:
-        url: https://charts.bitnami.com/bitnami
+        url: https://charts.weave.works/bitnami
         name: dokuwiki
         version: "11.1.6"
