@@ -6,7 +6,4 @@ spec:
   description: Profile for deploying dokuwiki
   artifacts:
     - name: dokuwiki
-      chart:
-        url: https://charts.bitnami.com/bitnami
-        name: dokuwiki
-        version: "11.1.6"
+      path: dokuwiki
