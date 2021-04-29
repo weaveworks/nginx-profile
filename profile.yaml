@@ -1,21 +1,11 @@
 apiVersion: profiles.fluxcd.io/v1alpha1
 kind: Profile
 metadata:
-  name: nginx
+  name: dokuwiki
 spec:
-  description: Profile for deploying nginx
-  version: v0.0.1
+  description: Profile for deploying dokuwiki
   artifacts:
-    - name: nested-profile
-      kind: Profile
-      profile:
-        url: https://github.com/weaveworks/nginx-profile
-        branch: helm-artifact
-    - name: nginx-deployment
-      path: nginx/deployment
-      kind: Kustomize
     - name: dokuwiki
-      kind: HelmChart
       chart:
         url: https://charts.bitnami.com/bitnami
         name: dokuwiki
