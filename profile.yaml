@@ -5,6 +5,9 @@ metadata:
 spec:
   description: Profile for deploying nginx
   artifacts:
-    - name: nginx-deployment
-      path: nginx/deployment
-      kind: Kustomize
+    - name: bitnami-nginx
+      kind: HelmChart
+      chart:
+        url: https://charts.bitnami.com/bitnami
+        name: nginx
+        version: "8.9.1"
