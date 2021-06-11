@@ -1,12 +1,15 @@
-apiVersion: profiles.fluxcd.io/v1alpha1
-kind: Profile
+apiVersion: weave.works/v1alpha1
+kind: ProfileDefinition
 metadata:
   name: nginx
 spec:
+  name: nginx
   description: Profile for deploying nginx
+  maintainer: weaveworks
+  prerequisites:
+    - "kubernetes 1.19"
   artifacts:
     - name: bitnami-nginx
-      kind: HelmChart
       chart:
         url: https://charts.bitnami.com/bitnami
         name: nginx
