@@ -14,3 +14,5 @@ spec:
         url: https://charts.bitnami.com/bitnami
         name: nginx
         version: "8.9.1"
+        defaultValues: |
+          replicaCount: 3
