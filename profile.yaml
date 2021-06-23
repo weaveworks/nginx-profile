@@ -16,3 +16,5 @@ spec:
         version: "8.9.1"
         defaultValues: |
           replicaCount: 3
+          service:
+            type: ClusterIP
