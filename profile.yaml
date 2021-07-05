@@ -3,7 +3,6 @@ kind: ProfileDefinition
 metadata:
   name: nginx
 spec:
-  name: nginx
   description: Profile for deploying nginx
   maintainer: weaveworks
   prerequisites:
